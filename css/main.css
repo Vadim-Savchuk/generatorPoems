@@ -1,0 +1,111 @@
+body {
+    font-family: 'Alegreya', serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background: cornflowerblue;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Про проект */
+.about{
+    top: 2%;
+    right: -200px;
+    transition: 0.9s;
+    position: absolute;
+    border-radius: 10px;
+    background-color: gold;
+    padding: 30px 50px 30px 50px;
+}
+
+.about:hover{
+    right: 0px;
+}
+
+.about-button{
+    font-size: 18px;
+    transition: 0.4s;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 6px 6px 1px rgb(0 0 255 / 20%);
+}
+
+.about-button:hover{
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Обложка вірша_______________________ */
+.poem{
+    padding: 60px;
+    display: none;
+    background-color: #fff;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+/* _____________________________________ */
+
+
+
+/* Вірш_________________________________ */
+.poem-text{
+    font-size: 24px;
+    line-height: normal;
+}
+
+.poem-text::before{
+    font-size: 30px;
+    content: '\201D';
+    margin-right: 9px;
+    margin-left: -25px;
+}
+.poem-text::after{
+    font-size: 30px;
+    content: '\201D';
+    margin-left: 10px;
+    position: absolute;
+}
+/* ______________________________________ */
+
+
+
+/* Автор вірша___________________________ */
+.author-poem{
+    display: flex;
+    font-size: 25px;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: end;
+}
+
+.author-poem::before{
+    font-size: 15px;
+    content: '\2014';
+    margin-right: 10px;
+}
+/* ______________________________________ */
+
+
+
+/* Показати вірш ________________________*/
+.show{
+    display: block;
+}
+/* ______________________________________ */
